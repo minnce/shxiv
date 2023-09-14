@@ -1,6 +1,8 @@
 #include "pricingutil.h"
 
-PricingUtil::PricingUtil() {}
+PricingUtil::PricingUtil() : val(0.0) {
+  
+}
 
 float PricingUtil::calcVal(float prevPrice, float interest, float oleoConstant) {
     float res = (prevPrice * (0.9 + interest)) * oleoConstant;
